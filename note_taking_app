@@ -1,0 +1,56 @@
+'''
+Introduction to Computer Science: Final Project
+4/11/2023
+Due: 4/27/2023
+'''
+
+'''
+note class (which makes note dictionary private)
+function for create_note("title") -> then use an input function to create content
+function for view_all_notes()
+function for delete_note("title")
+'''
+class Notes:
+
+    def __init__(self, note_name, note_content):
+        self.note_name = note_name
+        self.note_content = note_content
+
+    def edit_note(self):
+        print(self.note_name)
+        print(self.note_content)
+        self.note_content = input("Type in your notes: ")
+
+    def print_note(self):
+        print(self.note_name)
+        print(self.note_content)        
+
+def view_all_notes(list_of_notes):
+    Notes = list_of_notes
+    for x in Notes:
+        x.print_note()
+
+'''
+# Function for viewing all notes
+notes = {"title 1": "efkewf", "title 2":"wefjinwefiwef","title 3":"ejfwnefjwne"}
+
+def print_all_notes():
+    for key in notes.keys():
+        print(key)
+        
+print_all_notes()
+'''
+
+#notes_list = [Notes()]
+
+# Test
+note_1 = Notes("Example 1", "Hello world!")
+note_2 = Notes("Example 2", "Goodbye world!")
+note_3 = Notes("Test 3", "ewjfnwefjkwef")
+note_4 = Notes("Test 4", "wefwejfwne")
+
+note_list = [note_1, note_2, note_3, note_4]
+view_all_notes(note_list)
+
+note_3.edit_note()
+note_3.print_note()
