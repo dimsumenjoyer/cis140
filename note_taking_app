@@ -9,7 +9,7 @@ note class (which makes note dictionary private)
 function for create_note("title") -> then use an input function to create content
 function for view_all_notes()
 function for delete_note("title")
-
+'''
 class Notes:
 
     def __init__(self, note_name, note_content):
