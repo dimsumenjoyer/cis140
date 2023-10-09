@@ -9,7 +9,7 @@ note class (which makes note dictionary private)
 function for create_note("title") -> then use an input function to create content
 function for view_all_notes()
 function for delete_note("title")
-'''
+
 class Notes:
 
     def __init__(self, note_name, note_content):
@@ -30,7 +30,7 @@ def view_all_notes(list_of_notes):
     for x in Notes:
         x.print_note()
 
-'''
+
 # Function for viewing all notes
 notes = {"title 1": "efkewf", "title 2":"wefjinwefiwef","title 3":"ejfwnefjwne"}
 
@@ -39,7 +39,6 @@ def print_all_notes():
         print(key)
         
 print_all_notes()
-'''
 
 #notes_list = [Notes()]
 
